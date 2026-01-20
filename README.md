@@ -16,16 +16,54 @@ Kira-Toolkit provides coding standards, rules, and commands for developing in Ki
 
 ## Quick Start
 
-### Install in Your Project
+### 1. Install Kira-Toolkit
 
+Run these two commands in your project directory:
+
+```bash
+mkdir -p .claude/commands
+curl -o .claude/commands/kira-install.md https://raw.githubusercontent.com/PhilipLudington/Kira-Toolkit/main/commands/kira-install.md
+```
+
+Then in Claude Code, run:
 ```
 /kira-install
 ```
 
-This command:
-1. Clones Kira-Toolkit into your project
-2. Copies rules and commands to `.claude/`
-3. Sets up version tracking
+This installs Kira-Toolkit with all rules, commands, and documentation.
+
+### 2. Use the Commands
+
+After installation, these commands are available:
+
+```
+/kira-review src/main.ki    # Review code against standards
+/kira-safety src/main.ki    # Security-focused review
+/kira-check                 # Run build, tests, and validation
+/kira-init my_project       # Create a new Kira-Toolkit project
+```
+
+### 3. Update Existing Installation
+
+To update Kira-Toolkit to the latest version:
+
+```
+/kira-update
+```
+
+This fetches the latest version and updates all rules and commands while optionally backing up your current installation.
+
+### Creating New Projects
+
+To create a new project with Kira-Toolkit already configured:
+
+```
+/kira-init my_project
+```
+
+This creates:
+- Standard directory structure (`src/`, `tests/`)
+- Kira-Toolkit rules and commands pre-installed
 
 ### Available Commands
 
