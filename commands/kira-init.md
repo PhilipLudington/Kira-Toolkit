@@ -159,7 +159,7 @@ Create `CLAUDE.md`:
 
 This project uses the Kira-Toolkit framework (v0.1.0) for Kira development standards.
 
-See `kira-toolkit/KIRATOOLKIT.md` for coding guidelines and available commands.
+See `kira-toolkit/reference/REFERENCE.md` for coding guidelines and available commands.
 
 ### Key Syntax Requirements
 - **Explicit types**: `let x: i32 = 42`
@@ -190,9 +190,8 @@ See `kira-toolkit/KIRATOOLKIT.md` for coding guidelines and available commands.
 
 ## Next Steps
 
-1. Install Kira-Toolkit: `/kira-install`
-2. Review code: `/kira-review`
-3. Run tests: `/kira-check`
+1. Review code: `/kira-review`
+2. Run tests: `/kira-check`
 
 ## Key Kira Concepts
 
