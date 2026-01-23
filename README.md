@@ -4,9 +4,10 @@ Claude Code integration for Kira development standards.
 
 ## Installation
 
-1. Clone with submodules:
+1. Add as a submodule to your project:
    ```bash
-   git clone --recurse-submodules https://github.com/PhilipLudington/Kira-Toolkit.git kira-toolkit
+   git submodule add https://github.com/PhilipLudington/Kira-Toolkit.git kira-toolkit
+   git submodule update --init --recursive
    ```
 
 2. Copy commands and rules to your project:
@@ -25,9 +26,7 @@ Claude Code integration for Kira development standards.
 
 To update to the latest version:
 ```bash
-cd kira-toolkit
-git pull --recurse-submodules
-cd ..
+git submodule update --remote --recursive kira-toolkit
 cp kira-toolkit/commands/*.md .claude/commands/
 cp kira-toolkit/reference/rules/*.md .claude/rules/
 ```
